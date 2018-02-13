@@ -45,3 +45,4 @@ dependencies:
         - xlsxwriter
         - requests
         - seaborn
+	- pointpats
