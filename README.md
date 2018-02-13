@@ -1,10 +1,15 @@
 # gsa2017
 
-This repository was born as a stripped-down fork of the King's Geocomputation [repository](https://github.com/kingsgeocomp/geocomputation). Its purpose it to keep track of changes to the `.yml` file used for setting up a [conda](https://conda.io/docs/) environment which turnecd out to be necessary during Spatial Analysis tutorials in Spring 2018. It should provide a place where an up-to-date working version of the environment can be retrieved and installed from, via:
+This repository was born as a stripped-down fork of the King's Geocomputation [repository](https://github.com/kingsgeocomp/geocomputation). Its purpose it to keep track of changes to the `.yml` file used for setting up a [conda](https://conda.io/docs/) environment which turnecd out to be necessary during Spatial Analysis tutorials in Spring 2018. It should provide a place from which an up-to-date working version of the environment can be retrieved and installed.
+
+On Unix run:
 
 ```
-conda env create -f https://raw.githubusercontent.com/alanecode/gsa2017/master/setup.yml
+wget https://raw.githubusercontent.com/alanecode/gsa2017/master/setup.yml
+conda env create -f setup.yml
 ```
+
+On Windows, download `setup.yml` and run `conda env create -f setup.yml`
 
 This will create a new environment called `gsa2017sa` intended to be used for Spatial Analysis tutorials. This will probably need to be augmented to also accomodate all modules needed for Applied Geocomputation and Spatial Analysis. E.g. At the time of writing, SOMPY is not included in the `gsa2017sa` environment. 
 
