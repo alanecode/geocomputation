@@ -5,7 +5,7 @@ This repository was born as a stripped-down fork of the King's Geocomputation [r
 On Unix run:
 
 ```
-wget https://raw.githubusercontent.com/alanecode/gsa2017/master/setup.yml
+curl https://raw.githubusercontent.com/alanecode/gsa2017/master/setup.yml -o setup.yml
 conda env create -f setup.yml
 ```
 
